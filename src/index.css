@@ -59,17 +59,18 @@ section {
 }
 
 .card-container {
-  width: 175px;
+  width: 200px;
   font-size: 12px;
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
+  position: relative;
 }
   
 
 .card-img {
   width: 100%;
-  min-height: 50%;
+  height: 100%;
   border-radius: 9px;
   margin-bottom: 9px;
 }
@@ -77,6 +78,8 @@ section {
 .card-title {
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 12px;
+  
 }
 
 .card-stats {
@@ -86,6 +89,21 @@ section {
 
 .card-star {
   font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card-badge {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  padding: 5px 7px;
+  border-radius: 2px;
+  background-color: aliceblue;
+  font-weight: bold;
+
 }
 
 

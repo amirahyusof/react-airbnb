@@ -12,15 +12,10 @@ const display = document.getElementById("root")
 function App(){
   const cards = data.map(element => {
     return (
-    <Card 
-    key = {element.id}
-    img = {element.coverImg}
-    rating = {element.stats.rating}
-    reviewCount = {element.stats.reviewCount}
-    country = {element.country}
-    title = {element.title}
-    price = {element.price}
-    />
+        <Card 
+            key = {element.id}
+            item = {element}
+        />
     )
   })
 
