@@ -10,11 +10,11 @@ import data from "./components/data.js"
 const display = document.getElementById("root")
 
 function App(){
-  const dataElement = data.map(element => {
+  const cards = data.map(element => {
     return <Card 
     img = {element.coverImg}
-    rating = {element.rating}
-    reviewCount = {element.reviewCount}
+    rating = {element.stats.rating}
+    reviewCount = {element.stats.reviewCount}
     country = {element.country}
     title = {element.title}
     price = {element.price}
@@ -25,7 +25,7 @@ function App(){
     <div>
       <Navbar />
       <Hero />
-      {Card}
+      {cards}
     </div>
   )
 }
