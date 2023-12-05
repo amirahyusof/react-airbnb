@@ -53,6 +53,9 @@ section {
 
 .card-list {
   display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .card-container {
@@ -64,9 +67,9 @@ section {
 }
   
 
-.card-photo {
+.card-img {
   width: 100%;
-  min-height: auto;
+  min-height: 50%;
   border-radius: 9px;
   margin-bottom: 9px;
 }

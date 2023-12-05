@@ -3,7 +3,7 @@ import React from "react";
 function Card(props){
     return(
         <section className="card-container">
-            <img src={process.env.PUBLIC_URL + `/images/${props.img}`} alt="element" className="card-photo"/>
+            <img src={process.env.PUBLIC_URL + `/images/${props.img}`} alt="element" className="card-img"/>
             <div className="card-stats">
                 <img src={process.env.PUBLIC_URL + "/images/star.png"} alt="star" className="card-star"/>
                 <span>{props.rating}</span>
