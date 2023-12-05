@@ -51,18 +51,33 @@ section {
   line-height: 17.6px;
 }
 
+.card-list {
+  display: flex;
+}
+
 .card-container {
   width: 175px;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
 }
+  
 
 .card-photo {
   width: 100%;
+  min-height: auto;
   border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-stats {
-  display: flex;
+  display:flex;
   align-items: center;
 }
 

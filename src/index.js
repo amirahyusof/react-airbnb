@@ -11,7 +11,9 @@ const display = document.getElementById("root")
 
 function App(){
   const cards = data.map(element => {
-    return <Card 
+    return (
+    <Card 
+    key = {element.id}
     img = {element.coverImg}
     rating = {element.stats.rating}
     reviewCount = {element.stats.reviewCount}
@@ -19,13 +21,16 @@ function App(){
     title = {element.title}
     price = {element.price}
     />
+    )
   })
 
   return(
     <div>
       <Navbar />
       <Hero />
+      <section className="card-list">
       {cards}
+      </section>
     </div>
   )
 }
