@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <div>
             <nav>
-                <img src="./image/airbnb-logo.png" alt="logo-airbnb" className="nav--logo" />
+                <img src={ process.env.PUBLIC_URL + "/images/airbnb-logo.png"} alt="logo-airbnb" className="nav--logo" />
             </nav>
         </div>
     )

@@ -3,9 +3,9 @@ import React from "react";
 function Card(props){
     return(
         <section className="card-container">
-            <img src={`./image/${props.img}`} alt="element" className="card-photo"/>
+            <img src={process.env.PUBLIC_URL + `/images/${props.img}`} alt="element" className="card-photo"/>
             <div className="card-stats">
-                <img src="./image/star.png" alt="star" className="card-star"/>
+                <img src={process.env.PUBLIC_URL + "/images/star.png"} alt="star" className="card-star"/>
                 <span>{props.rating}</span>
                 <span className="gray">({props.reviewCount}) . </span>
                 <span className="gray">{props.country}</span>
